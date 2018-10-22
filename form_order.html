@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Фотограф Наталія Оленчук</title>
+        <link rel="shortcut icon" href="img/logos/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <main>
+            <section id="contacts">
+                <h3>Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h3>
+                <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
+                    <label for="client-name">Ваше ім'я:</label>
+                    <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
+                    <br>
+                    <label>
+                        Ваш E-mail:
+        	        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
+                    </label>
+                    <br>
+                    <label>
+                        Ваш номер телефону:
+        	        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
+                    </label>
+                    <br>
+                    <p>
+                        <strong>Выберіть тип фотосесії</strong>
+                    </p>
+                    <p>
+                        <select name="Тип фотосесії">
+                            <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
+                            <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
+                            <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
+                            <option value="Сімейна фотосесія">Сімейна фотосесія</option>
+                            <option value="Зйомка в фотостудії">Зйомка в фотостудії</option>
+                            <option value="Індивідуальна фотосесія">Індивідуальна фотосесія</option>
+                            <option value="LOVESTORY">LOVESTORY</option>
+                            <option value="ІНШЕ">ІНШЕ</option>
+                        </select>
+                    <p>
+                        Коментар чи побажання:<Br>
+                        <textarea name="Коментар чи побажання:" cols="40" rows="3" placeholder="Коментар чи побажання:"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Замовити">
+                        <input type="reset" value="Очистити форму">
+                    </p>
+                </form>
+            </section>
+            <br>
+            <form action="index.html">
+                <button type="submit">Повернутись на головну</button>
+            </form>
+        </main>
+    </body>
+</html>
