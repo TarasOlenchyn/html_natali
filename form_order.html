@@ -7,23 +7,33 @@
         <link rel="stylesheet" href="css/form_order.css">
     </head>
     <body>
-        <main>
             <section id="contacts">
                 <h3>Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h3>
+                
+                <div>
                 <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
+                   
+                   <p>
                     <label for="client-name">Ваше ім'я:</label>
                     <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
-                    <br>
+                   </p>
+                    
+                    <p>
+
                     <label>
                         Ваш E-mail:
         	        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
                     </label>
-                    <br>
+                    
+                    </p>
+                    <p>
                     <label>
                         Ваш номер телефону:
         	        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
                     </label>
-                    <br>
+                    </p>
+                </div>
+                    <div>
                     <p>
                         <strong>Выберіть тип фотосесії</strong>
                     </p>
@@ -48,10 +58,10 @@
                     </p>
                 </form>
             </section>
-            <br>
             <form action="index.html">
                 <button type="submit">Повернутись на головну</button>
             </form>
-        </main>
+            </div>
+            
     </body>
 </html>

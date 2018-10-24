@@ -2,19 +2,18 @@
 <html lang="uk">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Фотограф Наталія Оленчук</title>
         <link rel="shortcut icon" href="img/logos/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header>
-            <div id="logo">
-                <a href="index.html">
-                    <img src="img/logos/logo.png" alt="Логотип фотографа">
-                </a>
-            </div>
+        <header id="home">
             <nav>
-                <ul>
+                    <ul class="menu">
+                    <li class="logo"><a href="index.html">
+                    <img src="img/logos/logo.png" alt="Логотип фотографа">
+                    </a></li>
                     <li>
                         <a href="#about_me">ПРО МЕНЕ</a>
                     </li>
@@ -27,17 +26,41 @@
                     <li>
                         <a href="#contacts">КОНТАКТИ</a>
                     </li>
-                </ul>
+                    </ul>
             </nav>
         </header>
-        <main>
-            <h1>
-                ФОТОГРАФ <br>НАТАЛІЯ ОЛЕНЧУК
-            </h1>
-            <form action="form_order.html">
-                <button type="submit">Замовити фотосесію</button>
-            </form>
-            <section id="about_me">
+    <main>
+        <div class="banner">
+                <div class="sighn">
+                    <h1>Фотограф <br> Наталія Оленчук</h1>
+                </div>
+                    <div class="button-container">
+                    <form action="form_order.html">
+                        <button type="submit" class="button">Замовити фотосесію</button>
+                    </form>
+                    </div>
+        </div>
+
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+           <section id="about_me">
                 <h2>ПРО МЕНЕ</h2>
                 <h3>Привіт! Я Наталія Оленчук</h3>
                 <p>Ласкаво прошу на мій сайт. Головний жанр в якому я працюю це сімейна і весільна фотозйомка.
@@ -128,7 +151,7 @@
                     </p>
                     <p>Високоякісна фотокнига</p>
                     <p>Ціна 400 у.о.</p>
-                </div>
+                </div class="button-container">
                 <form action="form_order.html">
                     <button type="submit">Замовити фотосесію</button>
                 </form>
@@ -143,19 +166,16 @@
                 <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
                     <label for="client-name">Ваше ім'я:</label>
                     <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
-                    <br>
                     <label>
                         Ваш E-mail:
         	        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
                     </label>
-                    <br>
                     <label>
                         Ваш номер телефону:
         	        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
                     </label>
-                    <br>
                     <p>
-                        Ваше повідомлення:<Br>
+                        Ваше повідомлення:
                         <textarea name="Повідомлення" cols="40" rows="3" placeholder="Ваше повідомлення:"></textarea>
                     </p>
                     <p>
@@ -188,7 +208,7 @@
                         <img src="img/logos/phone.png" alt="Логотип номер телефону">
                     </li>
                     <li>
-                        <a href="#logo">
+                        <a href="#home">
                             <img src="img/logos/back.png" alt="Логотип повернутись вверх сторінки">
                         </a>
                     </li>
