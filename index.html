@@ -7,7 +7,7 @@
         <link rel="shortcut icon" href="img/logos/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/index.css">
     </head>
-    <body>
+    <body link="white" vlink="white" alink="white">
         <header id="home">
           
            <nav>
@@ -30,17 +30,26 @@
                     </ul>
             </nav>
         </header>
+        
+        
+        
+        
+        
     <main>
-        <div class="banner">
-                <div class="sighn">
+        
+        
+        
+        
+        <div class="banner_sighn">
                     <h1>Фотограф <br> Наталія Оленчук</h1>
-                </div>
-                    <div class="button-container">
-                    <form action="form_order.html">
+            </div>
+          
+                  
+                    <div>
+                            <form action="form_order.html">
                         <button type="submit" class="button">Замовити фотосесію</button>
                     </form>
-                    </div>
-        </div>
+                </div>
 
             
         
@@ -58,12 +67,10 @@
         
         
         
-        
-        
-        
-           <section id="about_me">
-                <h2>ПРО МЕНЕ</h2>
-                <h3>Привіт! Я Наталія Оленчук</h3>
+           <section id="about_me" class="about_me">
+                <h2>ПРО МЕНЕ
+                <p>Привіт! Я Наталія Оленчук</p>
+                </h2>
                 <p>Ласкаво прошу на мій сайт. Головний жанр в якому я працюю це сімейна і весільна фотозйомка.
             Чому я  вибрала саме цей напрям? Інколи мені здається, що не було ніякого усвідомленого
             вибору - все сталось само собою.
@@ -71,7 +78,12 @@
             Я люблю фотографувати LOVE STORY, весілля, сім'ї в очікуванні дітей та дітей будь якого віку. 
             Фотографія для мене це спосіб проникнути в глибину відносин між людьми і з самим собою.</p>
             </section>
-            <section id="portfolio">
+            
+            
+            
+            
+            
+            <section id="portfolio" class="portfolio">
                 <h2>МОЇ РОБОТИ</h2>
                 <div>
                     <h3>ВЕСІЛЛЯ</h3>
@@ -101,16 +113,23 @@
                     <img src="img/photos/pregnancy_three.jpg" alt="Жінка в сукні">
                     <img src="img/photos/pregnancy_four.jpg" alt="Жінка в фотостудії">
                 </div>
-            </section>
-            <section>
-                <h3>
+           
+           
+           <div class="more_about_me">
                     Більше моїх робіт можна знайти на персональних сторінках у 
             <a href="https://www.facebook.com/natalya.olenchuk.3" target="_blank">Facebook</a>
                     та 
             <a href="https://www.instagram.com/natali_olenchuk/" target="_blank">Instagram</a>
-                </h3>
+            </div>
+
             </section>
-            <section id="prices">
+            
+            
+            
+         
+            
+            
+            <section id="prices" class="prices">
                 <h3>Скільки коштує весільна фотосесія</h3>
                 <div>
                     <h3>
@@ -152,41 +171,69 @@
                     </p>
                     <p>Високоякісна фотокнига</p>
                     <p>Ціна 400 у.о.</p>
+                    
                 </div class="button-container">
                 <form action="form_order.html">
-                    <button type="submit">Замовити фотосесію</button>
+                    <button type="submit" class="button">Замовити фотосесію</button>
                 </form>
             </section>
-            <section id="contacts">
-                <h3>
-                    Контакти
-            <br>
-                    Якщо у Вас є запитання <br>
-                    або Ви хочете отримати консультацію - заповніть форму <br>та відправте мені на e-mail. Ви отримаєте відповідь протягом одного робочого дня
-                </h3>
+            
+            
+            
+            
+            <section id="contacts" class="contacts">
+            <h1>Контакти</h1>
+            Якщо у Вас є запитання або Ви хочете отримати консультацію - 
+            заповніть форму та відправте мені на e-mail.
+            Ви отримаєте відповідь протягом одного робочого дня
+            </section>
+                
+                
+                
+                
+            <section class="form_contact_me">
                 <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
-                    <label for="client-name">Ваше ім'я:</label>
+                    <label class="name">
+                    Ваше ім'я:
                     <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
+                    </label>
                     <label>
-                        Ваш E-mail:
+                    Ваш E-mail:
         	        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
                     </label>
                     <label>
-                        Ваш номер телефону:
+                    Ваш номер телефону:
         	        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
                     </label>
-                    <p>
-                        Ваше повідомлення:
-                        <textarea name="Повідомлення" cols="40" rows="3" placeholder="Ваше повідомлення:"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Відправити">
-                        <input type="reset" value="Очистити форму">
-                    </p>
+                    <label>
+                    Ваше повідомлення:
+                    <textarea name="Повідомлення" cols="20" rows="4" placeholder="Ваше повідомлення:"></textarea>
+                    </label>
+                   
+                    <div class="button-container">
+                    <label>
+                    <input type="submit" value="Відправити" class="button">
+                    </label>
+                    </div>
+                    
+                    <div class="button-container">
+                    <label>
+                    <input type="reset" value="Очистити форму" class="button">
+                    </label>
+                    </div>
+
                 </form>
             </section>
         </main>
-        <footer>
+        
+        
+        
+        
+        
+        
+        
+        
+        <footer class="footer">
             <div>
                 <h3>Зв'яжіться зі мною</h3>
                 <ul>

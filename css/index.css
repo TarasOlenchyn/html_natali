@@ -10,6 +10,8 @@ body {
     margin: auto;
 }
 
+ 
+
 header .menu {
     padding: 0;
     display: flex;
@@ -20,7 +22,7 @@ header {
     height: 100px;
     margin: 0;
     padding: 0;
-    background-color: #2F2727;
+    background-color: #270000;
     
 }
 
@@ -55,7 +57,7 @@ header nav {
 }
 
 
-main .banner {
+main .banner_sighn {
     min-height: 550px;
     background-image: url(../img/photos/girls.jpg);
     background-size: cover;
@@ -65,18 +67,28 @@ main .banner {
     justify-content: center;
 }
 
-main .sighn h1 {
+main .banner_sighn h1 {
     font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 3px 3px 3px #F1D4FF;
-    color: #2F2727;
+    color: #270000;
+    margin-top: 300px;
+    margin-left: 50px;
+    text-align: center;
 }
 
 
-main .banner .button-container {
+
+
+
+main .button {
     display: flex;
     justify-content: center;
 }
+
+
+
+
 
 .button {
     background-color: #0047BE; 
@@ -100,3 +112,144 @@ main .banner .button-container {
     background-color: #0047BE;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main .about_me {
+    background-color: #CCCCCC;
+}
+
+main .portfolio {
+    background-color: #270000;
+    color: white;
+}
+
+main .portfolio {
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+
+main .prices {
+    background-color: #CCCCCC;
+}
+
+main .contacts {
+    background-color: #270000;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+
+
+main .form_contact_me {
+    margin-top: 250px;
+    margin-bottom: 250px;
+
+}
+
+
+
+
+
+
+
+footer {
+    
+        background-color: #270000;
+        color: white;
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ footer {
+    padding: 0;
+    display: flex;
+}
+
+footer {
+    background-color: #270000;
+    
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+}
+
+footer {
+        display: flex;
+    }
