@@ -8,6 +8,10 @@
         <link href="css/form_order.css" rel="stylesheet" >
     </head>
     <body link="white" vlink="white" alink="white">
+      
+      
+      
+      
         <header>
               <h1>Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h1>
         </header>
@@ -15,44 +19,27 @@
     
     
     
-    
-    <main>
-         
 
-         
-         
-            <div class="form_order">
+
                 <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
-                   <p>
-                    <label for="client-name">Ваше ім'я:</label>
+                    <label>
                     <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
-                   </p>
-                    
-                    <p>
+                     </label>
 
                     <label>
-                        Ваш E-mail:
         	        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
                     </label>
                     
-                    </p>
-                    <p>
+                   
                     <label>
-                        Ваш номер телефону:
         	        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
                     </label>
-                    </p>
-                    </form>
 
                   
                   
-                  
-                  
-                    <p>
                         <strong>Выберіть тип фотосесії</strong>
-                    </p>
-                    <p>
-                        <select name="Тип фотосесії">
+                   
+                        <select name="Тип фотосесії" class="select_photosession">
                             <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
                             <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
                             <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
@@ -62,36 +49,32 @@
                             <option value="LOVESTORY">LOVESTORY</option>
                             <option value="ІНШЕ">ІНШЕ</option>
                         </select>
-                    <p>
                         Коментар чи побажання:<Br>
-                        <textarea name="Коментар чи побажання:" cols="40" rows="3" placeholder="Коментар чи побажання:"></textarea>
-                    </p>
-                    <p>
-                        <input type="submit" value="Замовити" class="button">
-                        <input type="reset" value="Очистити форму" class="button">
-                    </p>
+                        <textarea name="Коментар чи побажання:" cols="70" rows="4" placeholder="Коментар чи побажання:"></textarea>
                     
-                    
+                        <button type="submit" class = "button">Замовити</button>
+                    <button type="reset" class = "button">Очистити форму</button>
 
+                  
+                
                     
                 </form>
                 
                 
-
                 
                 
-            <form action="index.html">
-                <button type="submit" class="button">Повернутись на головну</button>
-            </form>
-            </div>
-            
+                <div class="back_main">
+                   <a href="index.html"><button type="submit" class="button">Повернутись на головну</button> </a>
+              </div>
 
+               
+           
             
-            
-            
-            
-             <footer class="footer">
-            <div>
+           
+           
+           
+        <footer class="footer">
+            <div class="icons">
                 <h3>Зв'яжіться зі мною</h3>
                 <ul>
                     <li>
@@ -112,28 +95,16 @@
                     <li>
                         <img src="img/logos/phone.png" alt="Логотип номер телефону">
                     </li>
-                    <li>
-                        <a href="#home">
-                            <img src="img/logos/back.png" alt="Логотип повернутись вверх сторінки">
-                        </a>
-                    </li>
+                  
                 </ul>
             </div>
-            <span>
+
+            <div class="Taras sighn">
                 <a href="https://www.facebook.com/tarasolenchyn" target="_blank">
                     Taras Olenchyn Design <br>2018
                 </a>
-            </span>
+            </div>
         </footer>
-           
-           
-           
-           
-           
-           
-    </main>
-           
-           
            
             
     </body>

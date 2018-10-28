@@ -10,7 +10,16 @@ body {
     margin: auto;
 }
 
- 
+ a {
+    color: white;
+    text-decoration: none;
+   }
+   a:visited {
+    color: white;
+   } 
+   a:hover {
+    color: grey;
+   }
 
 header .menu {
     padding: 20px;
@@ -48,7 +57,6 @@ header nav {
     
     
     
-    
 @media (min-width: 500px) {
     header nav {
         display: flex;
@@ -64,6 +72,10 @@ header nav {
     }
 }
 
+
+    
+    
+    
 
 main .banner_sighn {
     min-height: 700px;
@@ -101,7 +113,7 @@ main .button_order {
 
 
 
-.button {
+ .button {
     background-color: #0047BE; 
     border: none;
     color: white;
@@ -118,6 +130,9 @@ main .button_order {
     color: white; 
     border: 2px solid #0047BE;
     border-radius: 20px;
+    width: 220px;
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+
 
 }
 
@@ -140,7 +155,7 @@ main .button_order {
 
 main .about_me {
     text-align: center;
-    outline: 1px solid #000;
+    outline: 1px solid grey;
     margin-bottom: 20px;
     
 }
@@ -383,8 +398,8 @@ main .contacts {
 
 
 main .form_contact_me {
-    margin-top: 220px;
-    margin-bottom: 220px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 
 }
 
@@ -409,10 +424,30 @@ main .form_contact_me {
 
 
 
+    
+    
+    
+form {
+    max-width: 60%;
+    
+    
+}
 
-
-
-
+input {
+    width: 80%;
+    height: 48px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-clip: padding-box; 
+    display:block;
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+    font-size:18px;
+    font-weight: 300;    
+    color: black;
+    padding-left:20px;
+    padding-right:40px;
+    margin-bottom:20px;
+}
 
 
 
@@ -433,18 +468,11 @@ footer {
 
  
  
- 
- 
- 
- 
- 
- footer {
-    padding: 0;
-    display: flex;
-}
 
 footer {
     background-color: #270000;
+    text-align: center;
+
     
 }
 
@@ -460,8 +488,29 @@ footer li a {
 }
 
 footer {
-        display: flex;
+    padding-top:10px;
+    padding-bottom:10px;
+    align-items: center;
+    justify-content: center; 
+    margin: 0; 
+
     }
+    
+    
+    footer .icons{
+   
+    display: block;
+    align-items: center;
+    justify-content: center; 
+    }
+    
+    
+    
+  
+    
+    
+    
+    
     
     
     
