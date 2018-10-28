@@ -6,31 +6,28 @@
 }
 
 body {
-     background-color: #270000;
-}
-
-body {
-    text-decoration: none;
-    color: white;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
-}
-
-body {
-    max-width: 980px;
+    max-width: 800px;
     margin: auto;
 }
 
+ 
 
+header {
+    padding: 20px;
+    display: flex;
+}
 
-
-
-
-
-
-
-
-
-
+header {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: #270000;
+    border-radius: 10px;
+    font-size: small;
+    color: white;
+    text-align: center;
+}
 
 
 
@@ -69,3 +66,87 @@ body section .button {
     background-color: #0047BE;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    
+        background-color: #270000;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: : 10px;
+        border-radius: 10px;
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ footer {
+    padding: 0;
+    display: flex;
+}
+
+footer {
+    background-color: #270000;
+    
+}
+
+footer li {
+    display: inline;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+}
+
+footer {
+        display: flex;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
