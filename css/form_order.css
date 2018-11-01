@@ -1,201 +1,124 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
-
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic') ;
+@font-face {
+font-family : "'Didact Gothic'";
+font-style : normal;
+font-weight : 400;
+src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
+}
 :root {
-    font-size: 20px;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+font-size : 20px;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 }
-
 body {
-    max-width: 800px;
-    margin: auto;
+max-width : 800px;
+margin : auto;
 }
-
- a {
-    color: white;
-    text-decoration: none;
-   }
-   a:visited {
-    color: white;
-   } 
-   a:hover {
-    color: #4169E1;
-   }
-
+a {
+color : white;
+text-decoration : none;
+}
+a:visited {
+color : white;
+}
+a:hover {
+color : #4169E1;
+}
 header {
-    padding: 20px;
-    display: flex;
+padding : 20px;
+display : flex;
 }
-
 header {
-    width: 100%;
-    height: 120px;
-    margin: 0;
-    padding: 0;
-    background-color: #270000;
-    border-radius: 10px;
-    font-size: small;
-    color: white;
-    text-align: center;
+width : 100%;
+height : 120px;
+margin : 0;
+padding : 0;
+background-color : #270000;
+border-radius : 10px;
+font-size : small;
+color : white;
+text-align : center;
 }
-
-
-
-
-
-
 form {
-    display: center;
-    margin: auto; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    }
-    
-   
-    
-    
-
-
-
+margin : auto;
+padding-top : 20px;
+padding-bottom : 20px;
+}
 .button {
-    background-color: #0047BE; 
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #0047BE; 
-    color: white; 
-    border: 2px solid #0047BE;
-    width: 220px;
-    border-radius: 20px;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
-
-
-
+background-color : #0047BE;
+border : none;
+color : white;
+padding : 16px 32px;
+text-align : center;
+text-decoration : none;
+display : inline-block;
+font-size : 17px;
+margin : 4px 2px;
+transition-duration : 0.4s;
+cursor : pointer;
+background-color : #0047BE;
+color : white;
+border : #0047BE solid 2px;
+width : 220px;
+border-radius : 20px;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 }
-
 .button:hover {
-    background-color: #0047BE;
-    color: black;
+background-color : #0047BE;
+color : black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 form {
-    max-width: 60%;
-    margin-top: 40px;
-
+max-width : 60%;
+margin-top : 40px;
 }
-
 input, select, textarea {
-    width: 80%;
-    height: 48px;
-    border: 1px solid grey;
-    border-radius: 4px;
-    background-clip: padding-box; 
-    display:block;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size:18px;
-    font-weight: 300;    
-    color: black;
-    padding-left:20px;
-    padding-right:40px;
-    margin-bottom:20px;
+width : 80%;
+height : 48px;
+border : grey solid 1px;
+border-radius : 4px;
+background-clip : padding-box;
+display : block;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-size : 18px;
+font-weight : 300;
+color : black;
+padding-left : 20px;
+padding-right : 40px;
+margin-bottom : 20px;
 }
-
-
 .back_main {
-    padding-bottom: 120px;
-    
+padding-bottom : 120px;
 }
-
-    
-    .select_photosession {
-        
-           width: 450px;
-
-    }
-
-
-
-
-
-
-
-
-
-
-
+.select_photosession {
+width : 450px;
+}
 footer {
-    
-        background-color: #270000;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: : 10px;
-        border-radius: 10px;
+background-color : #270000;
+color : white;
+padding-top : 10px;
+border-radius : 10px;
 }
-
-
- 
- 
-
 footer {
-    background-color: #270000;
-    text-align: center;
-
-    
+background-color : #270000;
+text-align : center;
 }
-
 footer li {
-    display: inline;
+display : inline;
 }
-
 footer li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+text-decoration : none;
+color : white;
+font-weight : 600;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 }
-
 footer {
-    padding-top:10px;
-    padding-bottom:10px;
-    align-items: center;
-    justify-content: center; 
-    margin: 0; 
-
-    }
-    
-    
-    footer .icons{
-   
-    display: block;
-    align-items: center;
-    justify-content: center; 
-    }
-    
-    
-    
-  
-    
-    
-    
-    
-    
+padding-top : 10px;
+padding-bottom : 10px;
+align-items : center;
+justify-content : center;
+margin : 0;
+}
+footer .icons {
+display : block;
+align-items : center;
+justify-content : center;
+}

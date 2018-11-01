@@ -1,151 +1,106 @@
-@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic') ;
+@font-face {
+
+font-family : "'Didact Gothic'";
+font-style : normal;
+font-weight : 400;
+src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
+}
 
 :root {
-    font-size: 20px;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+font-size : 20px;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 }
-
 body {
-    max-width: 800px;
-    margin: auto;
+max-width : 800px;
+margin : auto;
 }
 
- a {
-    color: white;
-    text-decoration: none;
-   }
-   a:visited {
-    color: white;
-   } 
-   a:hover {
-    color: grey;
-   }
-
+a {
+color : white;
+text-decoration : none;
+}
+a:visited {
+color : white;
+}
+a:hover {
+color : grey;
+}
 header .menu {
-    padding: 20px;
-    display: flex;
+padding : 20px;
+display : flex;
 }
-
 header {
-    width: 100%;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-    background-color: #270000;
-    border-radius: 10px;
+width : 100%;
+margin : 0;
+padding : 0;
+background-color : #A41034;
 }
-
 header .menu li {
-    display: inline;
+display : inline;
 }
-
 header .menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+text-decoration : none;
+color : white;
+font-weight : 600;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 }
-
 header nav {
-        display: flex;
-    }
-    
-    
-  
-    
-    
-    
-    
-    
-@media (min-width: 500px) {
-    header nav {
-        display: flex;
-    }
-  
-    header .menu {
-        flex: 1;
-        align-items: center;
-        justify-content: center;
-    }
-    header .menu li {
-        margin: 0 2%;
-    }
+display : flex;
 }
-
-
-    
-    
-    
 
 main .banner_sighn {
-    min-height: 700px;
-    background-image: url(../img/photos/Natali.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+min-height : 800px;
+background-image : url(../img/photos/Natali.jpg);
+background-size : cover;
+background-position : center;
+display : flex;
+
 }
-
-
-
 main .banner_sighn h1 {
-    font-family: 'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size: 2rem;
-    text-shadow: 5px 5px 5px black;
-    color: white;
-    margin-top: 400px;
-    text-align: center;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-size : 3rem;
+text-shadow : 3px 3px 3px #A41034;
+color : white;
+margin-top : 400px;
+text-align : right;
+height: 100px;
+width: 500px;
 }
 
 
-
-
-
-main .button_order {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+main 
+.button {
+background-color : #A41034;
+border : none;
+color : white;
+text-align : center;
+text-decoration : none;
+display : inline-block;
+font-size : 20px;
+transition-duration : 0.4s;
+cursor : pointer;
+background-color : #A41034;
+color : white;
+border : #FFE8E8 solid 2px;
+width : 220px;
+height: 90px;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-weight: bold;
 }
-
-
-
-
-
- .button {
-    background-color: #0047BE; 
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 17px;
-    margin: 4px 2px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #0047BE; 
-    color: white; 
-    border: 2px solid #0047BE;
-    border-radius: 20px;
-    width: 220px;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
-
-
-}
-
 .button:hover {
-    background-color: #0047BE;
-    color: black;
+background-color : #520015;
+color : pink;
 }
 
-
-
-
-
-
+main .button_order1, .button_order2, .button_send, .button_clean {
+  align-items: center;
+  justify-content: center;
+  padding-top:20px;
+  padding-bottom:20px;
+  display: flex;
+  
+}
 
 
 
@@ -154,379 +109,228 @@ main .button_order {
 
 
 main .about_me {
-    text-align: center;
-    outline: 1px solid grey;
-    margin-bottom: 20px;
-    
+text-align : center;
+margin-bottom : 20px;
+color: #A41034;
+padding-left: 30px;
+padding-right: 30px;
 }
-
 main .container {
-    background-color: white;
-    color: black;
-    text-align: center;
+background-color : white;
+color : black;
+text-align : center;
 }
-
-
-
 main .my_job {
-    background-color: #270000;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-
+background-color : #E0BAC4;
+color : #A41034;
+text-align : center;
+padding-top : 20px;
+padding-bottom : 20px;
 }
-
-
 main .more_about_me {
-    background-color: #270000;
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+background-color : #A41034;
+color : white;
+text-align : center;
+padding-top : 20px;
+padding-bottom : 20px;
+margin-bottom : 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 .container {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
+width : 100%;
+max-width : 960px;
+margin : 0 auto;
 }
 .photo {
-	float: left;
-    width: 33.333333%;
-	padding: 10px;
-	box-sizing: border-box;
+float : left;
+width : 33.333333%;
+padding : 10px;
+box-sizing : border-box;
 }
 .photo img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border: 10px solid #eee;
-    box-sizing: border-box;
+display : block;
+max-width : 100%;
+height : auto;
+border : #eee solid 10px;
+box-sizing : border-box;
 }
 .photo a:hover {
-    opacity: 0.5;
+opacity : 0.5;
 }
 .photo a {
-    display: block;
-    position: relative;
+display : block;
+position : relative;
 }
 .photo a:after {
-    content: '';
-    background: transparent url(../img/icons/eye-icon.png) no-repeat center;
-    width: 52px;
-    height: 35px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    visibility: hidden;
+content : '';
+background : url(../img/icons/eye-icon.png) center no-repeat transparent;
+width : 52px;
+height : 35px;
+position : absolute;
+margin : auto;
+top : 0;
+left : 0;
+bottom : 0;
+right : 0;
+visibility : hidden;
 }
-.photo:hover> a:after {
-    visibility: visible;
+.photo:hover > a:after {
+visibility : visible;
 }
 .photo figcaption {
-    color: #999999;
-    text-align: center;
-    margin-top: 20px;
+color : #999999;
+text-align : center;
+margin-top : 20px;
 }
-
 #gallery {
-    margin-bottom: 60px;
+margin-bottom : 60px;
 }
-#gallery:after { 
-   content: '';
-   display: block; 
-   height: 0; 
-   clear: both;
+#gallery:after {
+content : '';
+display : block;
+height : 0;
+clear : both;
 }
-    
- 
- 
-html, section, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: auto;
-	padding: auto;
-	border: auto;
+html, section, body, div, span, 
+applet, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, acronym, address,
+big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp, small, strike, strong, sub, sup,
+tt, var, b, u, i, center, dl, dt, dd, ol, 
+ul, li, fieldset, label, legend, table, 
+caption, tbody, tfoot, thead, tr, th, td, 
+article, aside, canvas, details, embed, figure,
+figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin : auto;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
+display : block;
 }
-
-
 blockquote, q {
-	quotes: none;
+quotes : none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before, blockquote:after, q:before, q:after {
+content : '';
+content : none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse : collapse;
+border-spacing : 0;
 }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
 main .prices {
-    background-color: #CCCCCC;
+background-color : #FFE8E8;
 }
-
 main .contacts {
-    background-color: #270000;
-    font-size: 1.1rem;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+background-color : #FFE8E8;
+font-size : 1.1rem;
+color : #A41034;
+text-align : center;
+padding-top : 10px;
+padding-bottom : 10px;
+}
+main .form_contact_me {
+margin-top : 120px;
+margin-bottom : 120px;
 }
 
+form {
+max-width: 80%;
 
+}
+input {
+width : 120%;
+height : 48px;
+border : grey solid 1px;
+background-clip : padding-box;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-size : 18px;
+font-weight : 300;
+color : black;
+margin-bottom : 20px;
+}
 
 
 main .form_contact_me {
-    margin-top: 120px;
-    margin-bottom: 120px;
-
+    
+    margin-left: 40px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-form {
-    max-width: 60%;
-    
-    
-}
-
-input {
-    width: 80%;
-    height: 48px;
-    border: 1px solid grey;
-    border-radius: 4px;
-    background-clip: padding-box; 
-    display:block;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
-    font-size:18px;
-    font-weight: 300;    
-    color: black;
-    padding-left:20px;
-    padding-right:40px;
-    margin-bottom:20px;
-}
-
-
-
-
-
-
 
 
 footer {
-    
-        background-color: #270000;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: : 10px;
-        border-radius: 10px;
+background-color : #A41034;
+color : white;
+padding-top : 10px;
 }
-
-
- 
- 
-
 footer {
-    background-color: #270000;
-    text-align: center;
-
-    
+text-align : center;
 }
-
 footer li {
-    display: inline;
+display : inline;
 }
-
 footer li a {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+text-decoration : none;
+color : white;
+font-weight : 600;
+font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+}
+footer {
+padding-top : 10px;
+padding-bottom : 10px;
+align-items : center;
+justify-content : center;
+margin : 0;
+}
+footer .icons {
+display : block;
+align-items : center;
+justify-content : center;
 }
 
-footer {
-    padding-top:10px;
-    padding-bottom:10px;
-    align-items: center;
-    justify-content: center; 
-    margin: 0; 
 
-    }
-    
-    
-    footer .icons{
-   
-    display: block;
-    align-items: center;
-    justify-content: center; 
-    }
-    
-    
-    
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+@media (min-width:500px) {
+header nav {
+display : flex;
+}
+header .menu {
+flex : 1;
+align-items : center;
+justify-content : center;
+}
+header .menu li {
+margin : 0 2%;
+}
+}
+
+
+
+@media (max-width:560px) {
+
+header .menu {
+align-items : center;
+justify-content : center;
+display: flex;
+flex-direction: column;
+padding-top: 10px;
+}
+header .menu li {
+margin : 0 2%;
+font-size: 18px;
+padding-top: 10px;
+display : block;
+align-items : center;
+justify-content : center;
+
+}
+main .banner_sighn {
+padding-right: 40px;
+text-align: center;
+}
+ 
+ main .container .photo {
+ width: 100%;
+}
+}

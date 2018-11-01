@@ -5,74 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Фотограф Наталія Оленчук</title>
         <link rel="shortcut icon" href="img/logos/favicon.png" type="image/x-icon">
-        <link href="css/form_order.css" rel="stylesheet" >
+        <link href="css/form_order.css" rel="stylesheet">
     </head>
-    <body link="white" vlink="white" alink="white">
-      
-      
-      
-      
+    <body>
         <header>
-              <h1>Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h1>
+            <h1>Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h1>
         </header>
-        
-    
-    
-    
-
-
-                <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
-                    <label>
-                    <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
-                     </label>
-
-                    <label>
-        	        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
-                    </label>
-                    
-                   
-                    <label>
-        	        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
-                    </label>
-
-                  
-                  
-                        <strong>Выберіть тип фотосесії</strong>
-                   
-                        <select name="Тип фотосесії" class="select_photosession">
-                            <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
-                            <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
-                            <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
-                            <option value="Сімейна фотосесія">Сімейна фотосесія</option>
-                            <option value="Зйомка в фотостудії">Зйомка в фотостудії</option>
-                            <option value="Індивідуальна фотосесія">Індивідуальна фотосесія</option>
-                            <option value="LOVESTORY">LOVESTORY</option>
-                            <option value="ІНШЕ">ІНШЕ</option>
-                        </select>
-                        Коментар чи побажання:<Br>
-                        <textarea name="Коментар чи побажання:" cols="70" rows="4" placeholder="Коментар чи побажання:"></textarea>
-                    
-                        <button type="submit" class = "button">Замовити</button>
-                    <button type="reset" class = "button">Очистити форму</button>
-
-                  
-                
-                    
-                </form>
-                
-                
-                
-                
-                <div class="back_main">
-                   <a href="index.html"><button type="submit" class="button">Повернутись на головну</button> </a>
-              </div>
-
-               
-           
-            
-           
-           
-           
+        <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
+            <label>
+                <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
+            </label>
+            <label>
+                <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
+            </label>
+            <label>
+                <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
+            </label>
+            <strong>Выберіть тип фотосесії</strong>
+            <select name="Тип фотосесії" class="select_photosession">
+                <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
+                <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
+                <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
+                <option value="Сімейна фотосесія">Сімейна фотосесія</option>
+                <option value="Зйомка в фотостудії">Зйомка в фотостудії</option>
+                <option value="Індивідуальна фотосесія">Індивідуальна фотосесія</option>
+                <option value="LOVESTORY">LOVESTORY</option>
+                <option value="ІНШЕ">ІНШЕ</option>
+            </select>
+            Коментар чи побажання:<Br>
+            <textarea name="Коментар чи побажання:" cols="70" rows="4" placeholder="Коментар чи побажання:"></textarea>
+            <button type="submit" class="button">Замовити</button>
+            <button type="reset" class="button">Очистити форму</button>
+        </form>
+        <form action="index.html" class="back_main">
+            <button type="submit" class="button">Повернутись на головну</button>
+        </form>
         <footer class="footer">
             <div class="icons">
                 <h3>Зв'яжіться зі мною</h3>
@@ -95,17 +62,14 @@
                     <li>
                         <img src="img/logos/phone.png" alt="Логотип номер телефону">
                     </li>
-                  
                 </ul>
             </div>
-
             <div class="Taras sighn">
                 <a href="https://www.facebook.com/tarasolenchyn" target="_blank">
                     Taras Olenchyn Design <br>2018
+                
                 </a>
             </div>
         </footer>
-           
-            
     </body>
 </html>
