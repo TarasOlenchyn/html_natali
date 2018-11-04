@@ -7,6 +7,14 @@ font-weight : 400;
 src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
 }
 
+@font-face {
+
+font-family : '"'Didact Gothic'"';
+font-style : normal;
+font-weight : 400;
+src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
+}
+
 :root {
 font-size : 20px;
 font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
@@ -15,7 +23,9 @@ body {
 max-width : 800px;
 margin : auto;
 }
-
+body {
+overflow-x : hidden;
+}
 a {
 color : white;
 text-decoration : none;
@@ -48,14 +58,12 @@ font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 header nav {
 display : flex;
 }
-
 main .banner_sighn {
 min-height : 800px;
 background-image : url(../img/photos/Natali.jpg);
 background-size : cover;
 background-position : center;
 display : flex;
-
 }
 main .banner_sighn h1 {
 font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
@@ -64,13 +72,10 @@ text-shadow : 3px 3px 3px #A41034;
 color : white;
 margin-top : 400px;
 text-align : right;
-height: 100px;
-width: 500px;
+height : 100px;
+width : 500px;
 }
-
-
-main 
-.button {
+main .button {
 background-color : #A41034;
 border : none;
 color : white;
@@ -84,36 +89,49 @@ background-color : #A41034;
 color : white;
 border : #FFE8E8 solid 2px;
 width : 220px;
-height: 90px;
+height : 90px;
 font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
-font-weight: bold;
+font-weight : bold;
 }
 .button:hover {
 background-color : #520015;
 color : pink;
 }
-
-main .button_order1, .button_order2, .button_send, .button_clean {
-  align-items: center;
-  justify-content: center;
-  padding-top:20px;
-  padding-bottom:20px;
-  display: flex;
-  
+main .button_send, .button_clean {
+padding-bottom : 20px;
 }
-
-
-
-
-
-
-
-main .about_me {
-text-align : center;
-margin-bottom : 20px;
-color: #A41034;
-padding-left: 30px;
-padding-right: 30px;
+main .button_order1 {
+padding-bottom : 20px;
+}
+input[type="checkbox"] {
+position : absolute;
+opacity : 0;
+}
+input[type="checkbox"]:focus + label {
+color : white;
+}
+label {
+display : block;
+background : #A41034;
+color : white;
+padding : 0.5em;
+border-bottom : 1px solid white;
+font-weight : bold;
+}
+section {
+height : 0;
+transition : all 0.5s;
+overflow : hidden;
+}
+#toggle1:checked ~ #content1, #toggle2:checked ~ #content2, #toggle3:checked ~ #content3, #toggle4:checked ~ #content4 {
+height : auto;
+}
+p {
+padding : 0 2em;
+}
+.togglebox {
+padding-bottom : 20px;
+position : inherit;
 }
 main .container {
 background-color : white;
@@ -128,8 +146,8 @@ padding-top : 20px;
 padding-bottom : 20px;
 }
 main .more_about_me {
-background-color : #A41034;
-color : white;
+background-color : #E0BAC4;
+color : #A41034;
 text-align : center;
 padding-top : 20px;
 padding-bottom : 20px;
@@ -190,16 +208,7 @@ display : block;
 height : 0;
 clear : both;
 }
-html, section, body, div, span, 
-applet, object, iframe, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, a, abbr, acronym, address,
-big, cite, code, del, dfn, em, img, ins, kbd,
-q, s, samp, small, strike, strong, sub, sup,
-tt, var, b, u, i, center, dl, dt, dd, ol, 
-ul, li, fieldset, label, legend, table, 
-caption, tbody, tfoot, thead, tr, th, td, 
-article, aside, canvas, details, embed, figure,
-figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, section, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 margin : auto;
 }
 article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
@@ -216,8 +225,72 @@ table {
 border-collapse : collapse;
 border-spacing : 0;
 }
+main .basic_package {
+float : left;
+width : 33.333333%;
+padding : 10px;
+box-sizing : border-box;
+display : block;
+max-width : 100%;
+height : 320px;
+border : #FFBDBD solid 10px;
+border-radius : 10px;
+box-sizing : border-box;
+float : left;
+position : relative;
+height : auto;
+overflow : hidden;
+background-color : #FB6060;
+padding : 0;
+}
+.standart_package {
+float : left;
+width : 33.333333%;
+padding : 10px;
+box-sizing : border-box;
+display : block;
+max-width : 100%;
+height : 320px;
+border : #FFDAC7 solid 10px;
+border-radius : 10px;
+box-sizing : border-box;
+float : left;
+position : relative;
+height : auto;
+overflow : hidden;
+background-color : #FF9A67;
+}
+.premium_package {
+float : left;
+width : 33.333333%;
+padding : 10px;
+box-sizing : border-box;
+display : block;
+max-width : 100%;
+height : 320px;
+border : #C8FFD8 solid 10px;
+box-sizing : border-box;
+float : left;
+position : relative;
+height : auto;
+overflow : hidden;
+background-color : #7FDC9B;
+}
+main.prices {
+color : #A41034;
+}
+main .label_color {
+background : white;
+}
 main .prices {
-background-color : #FFE8E8;
+color : black;
+}
+.contacts {
+height : 170px;
+display : inline-block;
+}
+.form_contact_me {
+display : inline-block;
 }
 main .contacts {
 background-color : #FFE8E8;
@@ -228,13 +301,11 @@ padding-top : 10px;
 padding-bottom : 10px;
 }
 main .form_contact_me {
-margin-top : 120px;
-margin-bottom : 120px;
+margin-top : 80px;
+margin-bottom : 80px;
 }
-
 form {
-max-width: 80%;
-
+max-width : 80%;
 }
 input {
 width : 120%;
@@ -247,14 +318,9 @@ font-weight : 300;
 color : black;
 margin-bottom : 20px;
 }
-
-
 main .form_contact_me {
-    
-    margin-left: 40px;
+margin-left : 40px;
 }
-
-
 footer {
 background-color : #A41034;
 color : white;
@@ -284,13 +350,6 @@ display : block;
 align-items : center;
 justify-content : center;
 }
-
-
-
-
-
-
-
 @media (min-width:500px) {
 header nav {
 display : flex;
@@ -304,33 +363,43 @@ header .menu li {
 margin : 0 2%;
 }
 }
-
-
-
 @media (max-width:560px) {
-
 header .menu {
 align-items : center;
 justify-content : center;
-display: flex;
-flex-direction: column;
-padding-top: 10px;
+display : flex;
+flex-direction : column;
+padding-top : 10px;
 }
 header .menu li {
 margin : 0 2%;
-font-size: 18px;
-padding-top: 10px;
+font-size : 18px;
+padding-top : 10px;
 display : block;
 align-items : center;
 justify-content : center;
-
 }
 main .banner_sighn {
-padding-right: 40px;
-text-align: center;
+padding-right : 40px;
+text-align : center;
 }
- 
- main .container .photo {
- width: 100%;
+main .container .photo {
+width : 100%;
+}
+.button_order2 {
+display : block;
+align-items : center;
+justify-content : center;
+padding-left : inherit;
+padding-right : inherit;
+}
+main .basic_package {
+width : 100%;
+}
+.standart_package {
+width : 100%;
+}
+.premium_package {
+width : 100%;
 }
 }
