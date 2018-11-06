@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Фотограф Наталія Оленчук</title>
         <link rel="shortcut icon" href="img/logos/favicon.png" type="image/x-icon">
+      
+      
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
         <link href="css/index.css" rel="stylesheet">
+       
     </head>
     <body>
         <header id="home">
@@ -56,9 +61,9 @@
                 <section id="content2">
                     <div id="prices" class="prices">
                         <figure class="basic_package">
-                            <h3>
+                            <h4>
                                 БАЗОВИЙ <br>ПАКЕТ
-                            </h3>
+                            </h4>
                             5 годин зйомки<br>
                             200 фото з обробкою<br>
                             Диск з індивідуальним <br>
@@ -68,9 +73,9 @@
                             чи передвесільну зйомку<br>Ціна 200 у.о.
                         </figure>
                         <figure class="standart_package">
-                            <h3>
+                            <h4>
                                 СТАНДАРТНИЙ <br>ПАКЕТ
-                            </h3>
+                            </h4>
                             9 годин зйомки<br>
                             Усі фото з обробкою<br>
                             Диск з індивідуальним <br>
@@ -80,26 +85,22 @@
                     Ціна 300 у.о.<br>
                         </figure>
                         <figure class="premium_package">
-                            <h3>
+                            <h4>
                                 ПРЕМІУМ <br>ПАКЕТ
-                            </h3>
+                            </h4>
                             12 годин зйомки<br>
                             Усі фото з обробкою<br>
                             Диск з індивідуальним <br>
                             оформленням<br>
                             Високоякісна фотокнига<br>Ціна 400 у.о.
                         </figure>
-                        <div class="button_order1">
-                            <form action="form_order.html">
-                                <button type="submit" class="button">Замовити фотосесію</button>
-                            </form>
-                        </div>
+                        
                     </div>
                 </section>
                 <input id="toggle3" type="checkbox" name="toggle"/>
                 <label for="toggle3">ЯКУ ТЕХНІКУ Я ВИКОРИСТОВУЮ?</label>
                 <section id="content3">
-                    <iframe width="800" height="515" src="https://www.youtube.com/embed/i9Z3lMuOB10" allow="accelerometer;
+                    <iframe width=100% height="515" src="https://www.youtube.com/embed/i9Z3lMuOB10" allow="accelerometer;
     autoplay; encrypted-media; gyroscope;
     picture-in-picture" allowfullscreen></iframe>
                 </section>
@@ -111,6 +112,84 @@
                     </p>
                 </section>
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            <!-- Button trigger modal -->
+<div class="text-center">
+<button type="button" class="button" data-toggle="modal" data-target="#exampleModalLong">
+ ЗАМОВИТИ ФОТОСЕСІЮ
+</button>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+
+
+<div class="order_photosession">
+ <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
+            <label class="label_color">
+                <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" required>
+            </label>
+            <label class="label_color">
+                <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
+            </label>
+            <label class="label_color">
+                <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
+            </label>
+            <strong>Выберіть тип фотосесії</strong>
+            <select name="Тип фотосесії">
+                <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
+                <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
+                <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
+                <option value="Сімейна фотосесія">Сімейна фотосесія</option>
+                <option value="Зйомка в фотостудії">Зйомка в фотостудії</option>
+                <option value="Індивідуальна фотосесія">Індивідуальна фотосесія</option>
+                <option value="LOVESTORY">LOVESTORY</option>
+                <option value="ІНШЕ">ІНШЕ</option>
+            </select>
+            Коментар чи побажання:<Br>
+            <textarea name="Коментар чи побажання:" cols="45" rows="4" placeholder="Коментар чи побажання:"></textarea>
+            <button type="submit" class="button">Замовити</button>
+            <button type="reset" class="button">Очистити форму</button>
+        </form>
+       
+
+</div>
+
+
+
+
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+            
+            
+            
+            
+            
+            
+            
+            
             <div id="portfolio" class="my_job">
                 <h1>МОЇ РОБОТИ</h1>
             </div>
@@ -319,8 +398,10 @@
                 Якщо у Вас є запитання або Ви хочете отримати консультацію - 
             заповніть форму та відправте мені на e-mail.
             Ви отримаєте відповідь протягом одного робочого дня
-            
             </section>
+            
+            
+            <div class="text-center">
             <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
                 <label class="label_color">
                     <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
@@ -341,23 +422,23 @@
                     <button type="reset" class="button">Очистити форму</button>
                 </div>
             </form>
+            </div>
+            
         </main>
+        
+        
+
+
+
+
+
+
+        
+        
+        
         <footer class="footer">
-            <div class="icons">
-                <h3>Поділіться моїм сайтом з друзями:</h3>
-                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                    <a class="a2a_button_facebook"></a>
-                    <a class="a2a_button_twitter"></a>
-                    <a class="a2a_button_email"></a>
-                    <a class="a2a_button_whatsapp"></a>
-                    <a class="a2a_button_viber"></a>
-                    <a class="a2a_button_linkedin"></a>
-                    <a class="a2a_button_skype"></a>
-                    <a class="a2a_button_telegram"></a>
-                </div>
-                <script async src="https://static.addtoany.com/menu/page.js"></script>
-                <h3>Або зв'яжіться зі мною в соціальних мережах:</h3>
+           
+                <h3>Зв'яжіться зі мною в соціальних мережах</h3>
                 <ul>
                     <li>
                         <a href="mailto:natalyaolenchyn@gmail.com" target="_blank">
@@ -392,6 +473,22 @@
                 </a>
             </div>
         </footer>
-        <script src="js/index.js"></script>
+
+        
+        
+        
+        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+<script src="js/index.js"></script>
+        
+        
+        
+        
     </body>
 </html>
