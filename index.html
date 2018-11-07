@@ -5,12 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Фотограф Наталія Оленчук</title>
         <link rel="shortcut icon" href="img/logos/favicon.png" type="image/x-icon">
-      
-      
-       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link href="css/index.css" rel="stylesheet">
-       
     </head>
     <body>
         <header id="home">
@@ -53,17 +49,17 @@
             За освітою я соціальний працівник і цікавість до відносин між людьми – спадок від першої професії.
             Я люблю фотографувати LOVE STORY, весілля, сім'ї в очікуванні дітей та дітей будь якого віку. 
             Фотографія для мене це спосіб проникнути в глибину відносин між людьми і з самим собою
+                        
+                        
                         </span>
                     </p>
                 </section>
                 <input id="toggle2" type="checkbox" name="toggle"/>
                 <label for="toggle2">СКІЛЬКИ КОШТУЄ ВЕСІЛЬНА ФОТОСЕСІЯ?</label>
                 <section id="content2">
-                    <div id="prices" class="prices">
-                        <figure class="basic_package">
-                            <h4>
-                                БАЗОВИЙ <br>ПАКЕТ
-                            </h4>
+                    <div class="container mt-3">
+                        <a href="#base" class="btn btn-danger btn-lg btn-block" data-toggle="collapse">БАЗОВИЙ ПАКЕТ</a>
+                        <div id="base" class="collapse">
                             5 годин зйомки<br>
                             200 фото з обробкою<br>
                             Диск з індивідуальним <br>
@@ -71,38 +67,41 @@
                             50% знижки <br>
                             на весільну <br>
                             чи передвесільну зйомку<br>Ціна 200 у.о.
-                        </figure>
-                        <figure class="standart_package">
-                            <h4>
-                                СТАНДАРТНИЙ <br>ПАКЕТ
-                            </h4>
+  
+                        
+                        </div>
+                    </div>
+                    <div class="container mt-3">
+                        <a href="#standart" class="btn btn-warning btn-lg btn-block" data-toggle="collapse">СТАНДАРТНИЙ ПАКЕТ</a>
+                        <div id="standart" class="collapse">
                             9 годин зйомки<br>
                             Усі фото з обробкою<br>
                             Диск з індивідуальним <br>
-                            оформленням
-                    Фотокнига <br>
-                            20х30 у подарунок
-                    Ціна 300 у.о.<br>
-                        </figure>
-                        <figure class="premium_package">
-                            <h4>
-                                ПРЕМІУМ <br>ПАКЕТ
-                            </h4>
+                            оформленням<br>
+                            Фотокнига 
+                            20х30 у подарунок<br>
+                            Ціна 300 у.о.<br>
+                        </div>
+                    </div>
+                    <div class="container mt-3 mb-3">
+                        <a href="#premium" class="btn btn-info btn-lg btn-block" data-toggle="collapse">ПРЕМІУМ ПАКЕТ</a>
+                        <div id="premium" class="collapse">
                             12 годин зйомки<br>
                             Усі фото з обробкою<br>
                             Диск з індивідуальним <br>
                             оформленням<br>
                             Високоякісна фотокнига<br>Ціна 400 у.о.
-                        </figure>
+  
                         
+                        </div>
                     </div>
                 </section>
                 <input id="toggle3" type="checkbox" name="toggle"/>
                 <label for="toggle3">ЯКУ ТЕХНІКУ Я ВИКОРИСТОВУЮ?</label>
                 <section id="content3">
-                    <iframe width=100% height="515" src="https://www.youtube.com/embed/i9Z3lMuOB10" allow="accelerometer;
-    autoplay; encrypted-media; gyroscope;
-    picture-in-picture" allowfullscreen></iframe>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/i9Z3lMuOB10" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </section>
                 <input id="toggle4" type="checkbox" name="toggle"/>
                 <label for="toggle4">КАЛЕНДАР ЗАМОВЛЕНЬ</label>
@@ -112,84 +111,45 @@
                     </p>
                 </section>
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            <!-- Button trigger modal -->
-<div class="text-center">
-<button type="button" class="button" data-toggle="modal" data-target="#exampleModalLong">
- ЗАМОВИТИ ФОТОСЕСІЮ
+            <div class="text-center">
+                <button type="button" class="button" data-toggle="modal" data-target="#exampleModalLong">ЗАМОВИТИ ФОТОСЕСІЮ
 </button>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-
-
-
-
-<div class="order_photosession">
- <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
-            <label class="label_color">
-                <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" required>
-            </label>
-            <label class="label_color">
-                <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
-            </label>
-            <label class="label_color">
-                <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
-            </label>
-            <strong>Выберіть тип фотосесії</strong>
-            <select name="Тип фотосесії">
-                <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
-                <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
-                <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
-                <option value="Сімейна фотосесія">Сімейна фотосесія</option>
-                <option value="Зйомка в фотостудії">Зйомка в фотостудії</option>
-                <option value="Індивідуальна фотосесія">Індивідуальна фотосесія</option>
-                <option value="LOVESTORY">LOVESTORY</option>
-                <option value="ІНШЕ">ІНШЕ</option>
-            </select>
-            Коментар чи побажання:<Br>
-            <textarea name="Коментар чи побажання:" cols="45" rows="4" placeholder="Коментар чи побажання:"></textarea>
-            <button type="submit" class="button">Замовити</button>
-            <button type="reset" class="button">Очистити форму</button>
-        </form>
-       
-
-</div>
-
-
-
-
-
-      </div>
-     
-    </div>
-  </div>
-</div>
-            
-            
-            
-            
-            
-            
-            
-            
+            </div>
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">Вкажіть свої контактні дані та виберіть тип фотосесії яку ви б хотіли замовити</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputName" placeholder="Ваше ім'я:" Name="Ім'я" required>
+                                    <input type="email" class="form-control" id="exampleInputE-mail" placeholder="Ваш E-mail:" Name="e-mail" required>
+                                    <input type="text" class="form-control" id="exampleInputPhone" placeholder="Ваш номер телефону:" Name="Номер телефону" required>
+                                </div>
+                                <select class="custom-select" name="Тип фотосесії">
+                                    <option value="Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.">Весільна фотосесія (БАЗОВИЙ ПАКЕТ) - Ціна 200 у.о.</option>
+                                    <option value="Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.">Весільна фотосесія (СТАНДАРТНИЙ ПАКЕТ) - Ціна 300 у.о.</option>
+                                    <option value="есільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.">Весільна фотосесія (ПРЕМІУМ ПАКЕТ) - Ціна 400 у.о.</option>
+                                    <option value="Сімейна фотосесія">Сімейна фотосесія</option>
+                                    <option value="Зйомка в фотостудії">Зйомка в фотостудії</option>
+                                    <option value="Індивідуальна фотосесія">Індивідуальна фотосесія</option>
+                                    <option value="LOVESTORY">LOVESTORY</option>
+                                    <option value="ІНШЕ">ІНШЕ</option>
+                                </select>
+                                Коментар чи побажання:<Br>
+                                <textarea name="Коментар чи побажання:" cols="45" rows="4" placeholder="Коментар чи побажання:"></textarea>
+                                <button type="submit" class="button">Замовити</button>
+                                <button type="reset" class="button">Очистити форму</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="portfolio" class="my_job">
                 <h1>МОЇ РОБОТИ</h1>
             </div>
@@ -388,6 +348,8 @@
                         <img src="img/logos/facebook.png" alt="Логотип Facebook">
                     </a>
                     та
+                    
+                    
                     <a href="https://www.instagram.com/natali_olenchuk/" target="blank">
                         <img src="img/logos/instagram.png" alt="Логотип Instagram">
                     </a>
@@ -398,46 +360,34 @@
                 Якщо у Вас є запитання або Ви хочете отримати консультацію - 
             заповніть форму та відправте мені на e-mail.
             Ви отримаєте відповідь протягом одного робочого дня
+            
+            
             </section>
-            
-            
             <div class="text-center">
-            <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
-                <label class="label_color">
-                    <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
-                </label>
-                <label class="label_color">
-                    <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
-                </label>
-                <label class="label_color">
-                    <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
-                </label>
-                <label class="label_color">
-                    <input type="text" name="Повідомлення" placeholder="Ваше повідомлення:" required>
-                </label>
-                <div class="button_send">
-                    <button type="submit" class="button">Відправити</button>
-                </div>
-                <div class="button_clean">
-                    <button type="reset" class="button">Очистити форму</button>
-                </div>
-            </form>
+                <form method="POST" action="https://formspree.io/taras.o.mail@gmail.com" target="_blank">
+                    <label class="label_color">
+                        <input type="text" name="Ім'я клієнта" placeholder="Ваше ім'я:" id="client-name" required>
+                    </label>
+                    <label class="label_color">
+                        <input type="email" name="E-mail" placeholder="Ваш E-mail:" required>
+                    </label>
+                    <label class="label_color">
+                        <input type="tel" name="Телефон" placeholder="Ваш номер телефону:" required>
+                    </label>
+                    <label class="label_color">
+                        <input type="text" name="Повідомлення" placeholder="Ваше повідомлення:" required>
+                    </label>
+                    <div class="button_send">
+                        <button type="submit" class="button">Відправити</button>
+                    </div>
+                    <div class="button_clean">
+                        <button type="reset" class="button">Очистити форму</button>
+                    </div>
+                </form>
             </div>
-            
         </main>
-        
-        
-
-
-
-
-
-
-        
-        
-        
         <footer class="footer">
-           
+            <div>
                 <h3>Зв'яжіться зі мною в соціальних мережах</h3>
                 <ul>
                     <li>
@@ -469,26 +419,12 @@
                 <a href="https://www.facebook.com/tarasolenchyn" target="_blank">
                     Taras Olenchyn Design <br>2018
                 
-                
                 </a>
             </div>
         </footer>
-
-        
-        
-        
-        
-        
-        
-        
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        
-<script src="js/index.js"></script>
-        
-        
-        
-        
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>

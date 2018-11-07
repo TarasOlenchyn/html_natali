@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic') ;
 @font-face {
-
+{
 font-family : "'Didact Gothic'";
 font-style : normal;
 font-weight : 400;
 src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
 }
-
+}
 @font-face {
-
+{
 font-family : '"'Didact Gothic'"';
 font-style : normal;
 font-weight : 400;
 src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
 }
-
+}
+@font-face {
+{
+font-family : ''"'';
+font-style : normal;
+font-weight : 400;
+src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
+}
+}
 :root {
 font-size : 20px;
 font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
@@ -92,9 +100,8 @@ width : 220px;
 height : 90px;
 font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
 font-weight : bold;
-margin-bottom: 20px;
-flex-direction: row;
-}
+margin-bottom : 20px;
+flex-direction : row;
 }
 .button:hover {
 background-color : #520015;
@@ -109,6 +116,7 @@ padding-bottom : 20px;
 input[type="checkbox"] {
 position : absolute;
 opacity : 0;
+cursor : pointer;
 }
 input[type="checkbox"]:focus + label {
 color : white;
@@ -121,9 +129,19 @@ padding : 0.5em;
 border-bottom : 1px solid white;
 font-weight : bold;
 }
-
-
-
+.video {
+position : relative;
+padding-bottom : 56.25%;
+padding-top : 25px;
+height : 0;
+}
+.video iframe {
+position : absolute;
+top : 0;
+left : 0;
+width : 100%;
+height : 100%;
+}
 section {
 height : 0;
 transition : all 0.5s;
@@ -145,7 +163,7 @@ color : black;
 text-align : center;
 }
 main .my_job {
-background-color : #E0BAC4;
+background-color : #FFE8E8;
 color : #A41034;
 text-align : center;
 padding-top : 20px;
@@ -293,8 +311,8 @@ color : black;
 .contacts {
 height : 170px;
 display : inline-block;
-width: 100%;
-height: 100%;
+width : 100%;
+height : 100%;
 }
 .form_contact_me {
 display : inline-block;
@@ -311,11 +329,10 @@ main .form_contact_me {
 margin-top : 80px;
 margin-bottom : 80px;
 }
-
 input {
 width : 80%;
-margin-left: auto;
-margin-right: auto;
+margin-left : auto;
+margin-right : auto;
 height : 48px;
 border : grey solid 1px;
 background-clip : padding-box;
@@ -326,14 +343,14 @@ color : black;
 margin-bottom : 20px;
 }
 select {
-    width: 450px;
+width : 450px;
 }
-
 main .form_contact_me {
-margin-left: 80px;
-margin-right: 80px;
-
+margin-left : 80px;
+margin-right : 80px;
 }
+
+
 footer {
 background-color : #A41034;
 color : white;
@@ -363,27 +380,10 @@ display : block;
 align-items : center;
 justify-content : center;
 }
-
-
 #btn btn-primary {
-    margin-left: auto;
-    margin-right: auto;
+margin-left : auto;
+margin-right : auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -443,3 +443,10 @@ width : 100%;
 width : 100%;
 }
 }
+
+
+
+
+
+
+
