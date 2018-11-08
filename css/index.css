@@ -1,25 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic') ;
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 @font-face {
-font-family : "'Didact Gothic'";
-font-style : normal;
-font-weight : 400;
-src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
-}
-@font-face {
-font-family : '"'Didact Gothic'"';
-font-style : normal;
-font-weight : 400;
-src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
-}
-@font-face {
-font-family : "'Didact Gothic'";
+font-family: 'Montserrat', sans-serif;
 font-style : normal;
 font-weight : 400;
 src : local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/ahcfv8qz1zt6hCC5G4F_P4ASlUuYow.ttf) format('truetype');
 }
 :root {
 font-size : 20px;
-font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-family: 'Montserrat', sans-serif;
 }
 body {
 max-width : 800px;
@@ -46,7 +35,7 @@ header {
 width : 100%;
 margin : 0;
 padding : 0;
-background-color : #A41034;
+background-color : #211F1F;
 }
 header .menu li {
 display : inline;
@@ -55,7 +44,8 @@ header .menu li a {
 text-decoration : none;
 color : white;
 font-weight : 600;
-font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
 }
 header nav {
 display : flex;
@@ -68,9 +58,9 @@ background-position : center;
 display : flex;
 }
 main .banner_sighn h1 {
-font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-family: 'Montserrat', sans-serif;
 font-size : 3rem;
-text-shadow : 3px 3px 3px #A41034;
+text-shadow : 3px 3px 3px black;
 color : white;
 margin-top : 400px;
 text-align : right;
@@ -78,32 +68,63 @@ height : 100px;
 width : 500px;
 }
 main .button {
-background-color : #A41034;
-border : none;
-color : white;
-text-align : center;
-text-decoration : none;
-display : inline-block;
-font-size : 20px;
-transition-duration : 0.4s;
-cursor : pointer;
-background-color : #A41034;
-color : white;
-border : #FFE8E8 solid 2px;
-width : 220px;
-height : 90px;
-font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
-font-weight : bold;
-margin-bottom : 20px;
-flex-direction : row;
+  display: inline-block;
+  -webkit-box-sizing: class="support css-value">content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: width 150px, height 100px;
+  cursor: pointer;
+  margin: 10px 10px 40px 10px;
+  padding: 10px 10px 10px 10px;
+
+  border: 1px solid #0f9b0f;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font: normal 20px/60px 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: -webkit-linear-gradient(-90deg, rgb(90,190,87) 0, rgb(53,146,56) 100%), rgb(90, 190, 87);
+  background: -moz-linear-gradient(180deg, rgb(90,190,87) 0, rgb(53,146,56) 100%), rgb(90, 190, 87);
+  background: linear-gradient(180deg, rgb(90,190,87) 0, rgb(53,146,56) 100%), rgb(90, 190, 87);
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 0 1px 2px rgb(50,114,40) ;
 }
+
 .button:hover {
-background-color : #520015;
-color : pink;
+  background: rgb(90, 190, 87);
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11) ;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.11) ;
+  -webkit-transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 150ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.button:active {
+  border: 1px solid rgba(180,180,180,0.2);
+  background: rgba(77,168,74,1);
+  -webkit-box-shadow: 0 3px 0 0 rgba(0,0,0,0.1) inset;
+  box-shadow: 0 3px 0 0 rgba(0,0,0,0.1) inset;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  transition: none;
 }
 main .button_send, .button_clean {
-padding-bottom : 20px;
+display: inline-block;
 }
+
+main .order_button_modal, .clean_button_modal {
+display: inline-block;
+}
+
 main .button_order1 {
 padding-bottom : 20px;
 }
@@ -113,15 +134,14 @@ opacity : 0;
 cursor : pointer;
 }
 input[type="checkbox"]:focus + label {
-color : white;
+color : #211F1F;
 }
 label {
 display : block;
-background : #A41034;
-color : white;
+background : #CCD2D4;
+color : #211F1F;
 padding : 0.5em;
 border-bottom : 1px solid white;
-font-weight : bold;
 }
 .video {
 position : relative;
@@ -146,6 +166,9 @@ height : auto;
 }
 p {
 padding : 0 2em;
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
 }
 .togglebox {
 padding-bottom : 20px;
@@ -153,18 +176,19 @@ position : inherit;
 }
 main .container {
 background-color : white;
-color : black;
+color : #211F1F;
 text-align : center;
 }
 main .my_job {
-background-color : #FFE8E8;
-color : #A41034;
+background-color : #E8EDF0;
+color : #211F1F;
 text-align : center;
 padding-top : 20px;
 padding-bottom : 20px;
 }
+
 main .more_about_me {
-color : #A41034;
+color : grey;
 text-align : center;
 padding-top : 20px;
 padding-bottom : 20px;
@@ -307,14 +331,15 @@ height : 170px;
 display : inline-block;
 width : 100%;
 height : 100%;
+margin-bottom: 50px;
+margin-top: 50px;
 }
 .form_contact_me {
 display : inline-block;
 }
 main .contacts {
-background-color : #FFE8E8;
 font-size : 1.1rem;
-color : #A41034;
+color : grey;
 text-align : center;
 padding-top : 10px;
 padding-bottom : 10px;
@@ -330,7 +355,7 @@ margin-right : auto;
 height : 48px;
 border : grey solid 1px;
 background-clip : padding-box;
-font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-family: 'Montserrat', sans-serif;
 font-size : 18px;
 font-weight : 300;
 color : black;
@@ -343,10 +368,8 @@ main .form_contact_me {
 margin-left : 80px;
 margin-right : 80px;
 }
-
-
 footer {
-background-color : #A41034;
+background-color : #211F1F;
 color : white;
 padding-top : 10px;
 }
@@ -358,9 +381,9 @@ display : inline;
 }
 footer li a {
 text-decoration : none;
-color : white;
+color : #808080;
 font-weight : 600;
-font-family : 'Century Gothic', 'Futura', 'Didact Gothic', san-serif;
+font-family: 'Montserrat', sans-serif;
 }
 footer {
 padding-top : 10px;
@@ -410,6 +433,16 @@ justify-content : center;
 main .banner_sighn {
 padding-right : 40px;
 text-align : center;
+}
+main .banner_sighn h1 {
+font-family: 'Montserrat', sans-serif;
+font-size : 2.5rem;
+text-shadow : 3px 3px 3px black;
+color : white;
+margin-top : 400px;
+text-align : right;
+height : 100px;
+width : 500px;
 }
 main .container .photo {
 width : 100%;
